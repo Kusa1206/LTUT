@@ -13,13 +13,13 @@
   <body>
     <div class="container">
       <header>Login Form</header>
-      <form>
+      <form id="login-form">
         <div class="input-field">
-          <input type="text" required />
+          <input id="email" type="text" required />
           <label>Email or Username</label>
         </div>
         <div class="input-field">
-          <input class="pswrd" type="password" required />
+          <input id="password" class="pswrd" type="password" required />
           <span class="show">SHOW</span>
           <label>Password</label>
         </div>
@@ -33,9 +33,9 @@
         <div class="facebook">
           <i class="fab fa-facebook-square"><span>Facebook</span></i>
         </div>
-        <div class="google">
+        <button type="button" id="login-google-btn" class="google">
           <i class="fab fa-google-plus-square"><span>Google</span></i>
-        </div>
+        </button>
       </div>
       <div class="signup">
         Not a member? <a href="/register/index.html">Signup now</a>
@@ -57,5 +57,6 @@
         }
       }
     </script>
+    <script type="module" src="login.js"></script>
   </body>
 </html>

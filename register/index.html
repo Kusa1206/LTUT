@@ -13,18 +13,24 @@
   <body>
     <div class="container">
       <header>Register Form</header>
-      <form>
-        <div class="input-field">
-          <input type="text" required />
+      <form id="register-form">
+        <div class="input-field" id="username">
+          <input type="text" id="email" />
+          <p id="email-error" style="color: red; font-size: small"></p>
           <label>Email or Username</label>
         </div>
         <div class="input-field">
-          <input class="pswrd" type="password" required />
+          <input class="pswrd" type="password" id="password" />
+          <p id="password-error" style="color: red; font-size: small"></p>
           <span class="show">SHOW</span>
           <label>Password</label>
         </div>
         <div class="input-field">
-          <input class="pswrd" type="password" required />
+          <input class="pswrd" type="password" id="confirm-password" />
+          <p
+            id="confirm-password-error"
+            style="color: red; font-size: small"
+          ></p>
           <span class="show">SHOW</span>
           <label>Confirm password</label>
         </div>
@@ -42,7 +48,7 @@
           <i class="fab fa-google-plus-square"><span>Google</span></i>
         </div>
       </div>
-      <div class="signin">
+      <div class="signin" style="margin-top: 20px">
         You have registered ?<a href="/login/index.html">Login</a>
       </div>
     </div>
@@ -62,5 +68,6 @@
         }
       }
     </script>
+    <script type="module" src="register.js"></script>
   </body>
 </html>
