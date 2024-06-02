@@ -11,7 +11,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
-    <title>Amado - Furniture Ecommerce Template | Home</title>
+    <title>Edit products</title>
 
     <!-- Favicon  -->
     <link rel="icon" href="/img/core-img/favicon.ico" />
@@ -111,36 +111,45 @@
       <!-- Header Area End -->
       <div style="padding-top: 70px; flex: 1;" >
         <div>
-          <a href="./add" class="btn btn-warning mb-5">New products</a>
+          <a href="../" class="btn btn-warning mb-5">Back to product list</a>
         </div>
-        <table class="table table-striped align-middle" >
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Img</th>
-              <th scope="col">Name</th>
-              <th scope="col">Price</th>
-              <th scope="col">Desc</th>
-              <th scope="col">Category</th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody id="tbody">
-            <!-- <tr>
-              <th scope="row">1</th>
-              <td>
-                <img width="100" height="100" style="object-fit: cover;" src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1714867200&semt=ais" alt="">
-              </td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td><a href="./edit.html" class="btn btn-sm btn-warning me-2">edit</a>
-                <a href="./edit.html" class="btn btn-sm btn-danger">delete</a>
-              </td>
-            </tr> -->
 
-          </tbody>
-        </table>
+
+<h3 class="text-center">Edit product</h3>
+
+<form id="add-form" class="mx-auto my-5" style="max-width: 500px;">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="product" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="image" class="form-label">Image</label>
+    <input class="form-control" type="file" accept="image/*" id="image">
+  </div>
+
+  <div class="mb-3">
+    <label for="price" class="form-label">price</label>
+    <input type="number" class="form-control" id="price" placeholder="product price" required>
+  </div>
+
+  <div class="mb-3 w-100">
+    <label for="category" class="form-label">Category</label>
+    <select id="category" aria-label="Default select example">
+ 
+      <option selected value="camping">camping</option>
+      <option value="diving">Diving</option>
+      <option value="technology">Technology</option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <textarea class="form-control" id="description" rows="3" placeholder="type your product description here..." required></textarea>
+  </div>
+  <button class="btn btn-warning w-100" style="border-radius: 10px;">Update</button>
+</form>
+      
       </div>
   
 
@@ -156,5 +165,7 @@
     <script src="/js/active.js"></script>
 
     <script type="module" src="./products.js"></script>
+    <script type="module" src="edit.js"></script>
   </body>
 </html>
+
