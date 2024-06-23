@@ -54,7 +54,7 @@ addForm.onsubmit = async function (event) {
   if (image.files[0]) {
     // user update img
     const storage = getStorage();
-    const imagePath = "products/" + new Date().valueOf;
+    const imagePath = "products/" + new Date().valueOf();
     const storageRef = ref(storage, imagePath);
 
     // 'file' comes from the Blob or File API

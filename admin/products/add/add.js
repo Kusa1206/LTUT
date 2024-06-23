@@ -21,7 +21,7 @@ addForm.onsubmit = function (event) {
   const category = document.getElementById("category");
 
   const storage = getStorage();
-  const imagePath = "products/" + new Date().valueOf;
+  const imagePath = "products/" + new Date().valueOf();
   const storageRef = ref(storage, imagePath);
 
   // 'file' comes from the Blob or File API
