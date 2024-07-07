@@ -8,6 +8,6 @@ const auth = getAuth();
 signOut(auth)
   .then(() => {
     alert("Đăng xuất thành công");
-    window.location.href = "/login";
+    window.location.href = "./login";
   })
   .catch((error) => {});

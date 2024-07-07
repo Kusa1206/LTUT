@@ -30,8 +30,8 @@ if (productId) {
     const description = document.getElementById("description");
 
     name.innerHTML = docSnap.data().name;
-    price.innerHTML = docSnap.data().price;
-    image.setAttribute("src", docSnap.data().image;
+    price.innerHTML = docSnap.data().price + "VNĐ";
+    image.setAttribute("src", docSnap.data().image);
     category.innerHTML = docSnap.data().category;
     description.innerHTML = docSnap.data().description;
   } else {

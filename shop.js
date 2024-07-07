@@ -30,7 +30,7 @@ function renderProduct(product) {
   productCard.innerHTML = `
   <div class="single-product-wrapper">
   <!-- Product Image -->
-  <a href="">
+  <a href="./product-details.html?id=${product.id}">
   <div class="product-img" style="object-fit: cover;">
     <img src="${product.image}" alt="" /></a>
     <!-- Hover Thumb -->
